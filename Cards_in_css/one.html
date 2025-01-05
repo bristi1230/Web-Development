@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second card</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+          width: 100vw;
+          height: 100vh;
+          background-color:rgb(0, 6, 7) ; 
+          display: flex; 
+          justify-content: center;
+          align-items: center;
+         /* min-height: 1000px;*/
+        }
+        .card{
+            width: 400px;
+            height: 600px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+        }
+        .card img{
+           width: 100%;
+           height: 30%;
+           border-top-left-radius:20px ; 
+           border-top-right-radius:20px;
+        }
+        .textbox{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 15px;
+           width: 80%;
+           text-align:center ;
+        }
+        #viewer{
+            width: 80%;
+            height: 10%;
+            background-color:rgb(218, 175, 175) ;
+            border-radius: 10px;
+            display: flex;
+            justify-content:space-between ;
+            align-items: center;
+            padding-right: 20px;
+            padding-left: 20px;
+
+
+
+        }
+        #leftbox{
+           /* width: fit-content;*/
+            height: 100%;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+
+        }
+        .img{
+            
+            width: 2rem;
+
+        }
+        #view{
+            width: 80%;
+            height:9% ;
+            background-color: rgb(187, 16, 16);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+        }
+        .viewdeatil a{
+            text-decoration: none;
+            color: rgb(220, 71, 71);
+            font-weight: bold;
+            font-size: large;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="image.png" alt="">
+            <div class="textbox">
+                <h2>Summary</h2>
+                <p>Gold Roger was known as the "Pirate King," the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world. His last words before his death revealed.</p>
+    
+
+            </div>
+           <div id="viewer">
+            <div id="leftbox">
+                <div class="img">
+                    <img src="download.png" alt="">
+                </div>
+                <div id="viewers">
+                    <p>Viewers</p>
+                    <p>541.9 million</p>
+                </div>
+            </div>
+            <div class="rightbox">
+                <a href="#">Ratings</a>
+            </div>
+
+           </div>
+           <button id="view">Watch Now </button>
+           <div class="viewdeatil"><a href="#">View For More Deatils</a></div>
+
+           
+        </div>
+    </div>
+</body>
+</html>
